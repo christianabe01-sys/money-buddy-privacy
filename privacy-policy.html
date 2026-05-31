@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Money Buddy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f3f4f6;
+      color: #111827;
+      line-height: 1.7;
+      padding: 24px 16px 64px;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      padding: 40px 0 32px;
+    }
+    .app-icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #162040 0%, #060C18 100%);
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      font-size: 36px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 4px;
+    }
+    .tagline {
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 8px;
+    }
+    .last-updated {
+      display: inline-block;
+      font-size: 12px;
+      color: #9ca3af;
+      background: #e5e7eb;
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+
+    /* Promise badges */
+    .promises {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+      margin: 32px 0;
+    }
+    .promise {
+      background: #fff;
+      border: 1px solid #d1fae5;
+      border-radius: 14px;
+      padding: 14px 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .promise-icon {
+      font-size: 20px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .promise-label {
+      font-size: 14px;
+      font-weight: 700;
+      color: #065f46;
+      margin-bottom: 2px;
+    }
+    .promise-detail {
+      font-size: 12px;
+      color: #6b7280;
+      line-height: 1.5;
+    }
+
+    /* Sections */
+    .card {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    .card h2 {
+      font-size: 18px;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    .card p {
+      font-size: 14px;
+      color: #374151;
+      margin-bottom: 12px;
+    }
+    .card p:last-child { margin-bottom: 0; }
+
+    /* Permissions table */
+    .permission {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    .permission:last-child { border-bottom: none; padding-bottom: 0; }
+    .perm-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+    .perm-label { font-size: 14px; font-weight: 700; color: #111827; }
+    .perm-desc  { font-size: 13px; color: #6b7280; margin-top: 2px; }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+      padding: 32px 24px;
+    }
+    .contact h2 { font-size: 18px; font-weight: 800; margin-bottom: 8px; }
+    .contact p  { font-size: 14px; color: #6b7280; margin-bottom: 16px; }
+    .contact a  {
+      display: inline-block;
+      background: #2563eb;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 12px 28px;
+      border-radius: 12px;
+    }
+    .contact a:hover { background: #1d4ed8; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #9ca3af;
+      margin-top: 40px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body          { background: #08111F; color: #f8fafc; }
+      .header h1    { color: #f8fafc; }
+      .card         { background: #0f172a; border-color: #1e293b; }
+      .card h2      { color: #f8fafc; border-bottom-color: #1e293b; }
+      .card p       { color: #cbd5e1; }
+      .promise      { background: #0f172a; border-color: #064e3b; }
+      .promise-label { color: #6ee7b7; }
+      .promise-detail { color: #94a3b8; }
+      .perm-label   { color: #f1f5f9; }
+      .perm-desc    { color: #94a3b8; }
+      .permission   { border-bottom-color: #1e293b; }
+      .last-updated { background: #1e293b; color: #94a3b8; }
+      .contact h2   { color: #f8fafc; }
+      footer        { color: #475569; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="app-icon">💰</div>
+    <h1>Money Buddy</h1>
+    <p class="tagline">Privacy Policy</p>
+    <span class="last-updated">Last updated: May 2026</span>
+  </div>
+
+  <!-- Privacy promises -->
+  <div class="promises">
+    <div class="promise">
+      <span class="promise-icon">📱</span>
+      <div>
+        <div class="promise-label">Local first</div>
+        <div class="promise-detail">All trip data, spends, receipts and settings are stored on this device. Cloud sync is optional.</div>
+      </div>
+    </div>
+    <div class="promise">
+      <span class="promise-icon">🚫</span>
+      <div>
+        <div class="promise-label">No tracking</div>
+        <div class="promise-detail">Money Buddy collects no analytics, crash reports, or usage data of any kind.</div>
+      </div>
+    </div>
+    <div class="promise">
+      <span class="promise-icon">👤</span>
+      <div>
+        <div class="promise-label">No sign-in required</div>
+        <div class="promise-detail">No email or password needed. Group Sync uses an anonymous device token that cannot be linked to your identity.</div>
+      </div>
+    </div>
+    <div class="promise">
+      <span class="promise-icon">🚫</span>
+      <div>
+        <div class="promise-label">No ads</div>
+        <div class="promise-detail">The app contains no advertising of any kind.</div>
+      </div>
+    </div>
+    <div class="promise">
+      <span class="promise-icon">🔒</span>
+      <div>
+        <div class="promise-label">No data selling</div>
+        <div class="promise-detail">Your data is never sold, rented, or shared with third parties for marketing.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- What we collect -->
+  <div class="card">
+    <h2>What we collect</h2>
+    <p>Money Buddy does not collect your name, email address, location, or any personally identifying information.</p>
+    <p>When you use <strong>Group Sync</strong>, Google Firebase generates an anonymous authentication token (UID) stored on your device. This UID has no connection to your real identity.</p>
+    <p>Trip data you choose to share via Group Sync is uploaded to Google Firebase Firestore. This includes trip names, expenses, contributor names, and journal entries. <strong>Receipt photos are never uploaded</strong> — they remain device-local only.</p>
+  </div>
+
+  <!-- Device permissions -->
+  <div class="card">
+    <h2>Device permissions</h2>
+    <div class="permission">
+      <span class="perm-icon">📷</span>
+      <div>
+        <div class="perm-label">Camera</div>
+        <div class="perm-desc">Used to photograph receipts and scan group QR codes to join shared trips. Images are processed on your device only.</div>
+      </div>
+    </div>
+    <div class="permission">
+      <span class="perm-icon">🖼️</span>
+      <div>
+        <div class="perm-label">Photo Library</div>
+        <div class="perm-desc">Used only when you choose an existing image to attach as a receipt. No images are uploaded or shared.</div>
+      </div>
+    </div>
+    <div class="permission">
+      <span class="perm-icon">🔔</span>
+      <div>
+        <div class="perm-label">Notifications</div>
+        <div class="perm-desc">Optional. Budget and daily-spend alerts are scheduled locally on your device. No data is sent anywhere to deliver them. You can decline or disable them at any time.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Third-party services -->
+  <div class="card">
+    <h2>Third-party services</h2>
+    <p><strong>Google Firebase</strong> — Group Sync uses Firebase Authentication and Firestore. These services are operated by Google LLC and governed by the <a href="https://policies.google.com/privacy" style="color:#2563eb">Google Privacy Policy</a>. Firebase Authentication is used in anonymous mode only — no personal identity is associated with the token.</p>
+    <p><strong>ExchangeRate-API</strong> — Live exchange rates are fetched from <a href="https://www.exchangerate-api.com" style="color:#2563eb">open.er-api.com</a>. Only currency codes are sent in these requests — no personal data whatsoever.</p>
+  </div>
+
+  <!-- Data retention -->
+  <div class="card">
+    <h2>Data retention &amp; deletion</h2>
+    <p><strong>Local data</strong> (trips, settings, receipts) is stored in your device's app storage and is deleted when you uninstall the app or tap <em>Settings → Data &amp; Reset → Reset All App Data</em>.</p>
+    <p><strong>Cloud data</strong> (Group Sync trips) persists in Firebase until you explicitly delete it. Uninstalling Money Buddy does not automatically delete cloud-synced trip data.</p>
+    <p>To remove cloud data: open the shared trip → Trip Settings → Danger Zone → Delete Trip.</p>
+  </div>
+
+  <!-- Your rights -->
+  <div class="card">
+    <h2>Your rights</h2>
+    <p>You have the right to access, correct, or delete any data associated with your use of this app.</p>
+    <p>
+      Delete all local data: <em>Settings → Data &amp; Reset → Reset All App Data</em><br>
+      Delete cloud trip data: <em>Trip Settings → Danger Zone → Delete Trip</em>
+    </p>
+    <p>For privacy inquiries or to exercise your rights under GDPR, CCPA, or applicable law, contact us at the address below.</p>
+  </div>
+
+  <!-- Children's privacy -->
+  <div class="card">
+    <h2>Children's privacy</h2>
+    <p>Money Buddy is not directed at children under 13. We do not knowingly collect data from children. If you believe a child has used this app in a way that uploads data, contact us and we will remove it promptly.</p>
+  </div>
+
+  <!-- Policy updates -->
+  <div class="card">
+    <h2>Policy updates</h2>
+    <p>This privacy policy may be updated from time to time. Continued use of the app after changes constitutes acceptance of the updated policy. The current version is always available at this URL and displayed inside the app under Settings → Privacy.</p>
+  </div>
+
+  <!-- Contact -->
+  <div class="card contact">
+    <h2>Contact us</h2>
+    <p>Questions about this policy or your data? We're happy to help.</p>
+    <a href="mailto:mrchanproductions@gmail.com">mrchanproductions@gmail.com</a>
+  </div>
+
+  <footer>
+    <p>© 2026 MrChanProductions. All rights reserved.</p>
+    <p style="margin-top:4px">Money Buddy · <a href="mailto:mrchanproductions@gmail.com" style="color:#9ca3af">mrchanproductions@gmail.com</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
